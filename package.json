@@ -1,0 +1,29 @@
+{
+	"name": "io-labs-webhook-call-statistics",
+	"version": "1.0.0",
+	"main": "src/main.js",
+	"repository": "git@github.com:sipgate-io/io-labs-webhook-call-statistics.git",
+	"author": "sipgate.io Team <io-team@sipgate.de>",
+	"license": "Unlicense",
+	"devDependencies": {
+		"eslint": "^6.8.0",
+		"eslint-config-prettier": "^6.7.0",
+		"eslint-config-standard": "^14.1.0",
+		"eslint-plugin-autofix": "0.0.9",
+		"eslint-plugin-import": "^2.21.1",
+		"eslint-plugin-node": "^10.0.0",
+		"eslint-plugin-prettier": "^3.1.1",
+		"eslint-plugin-promise": "^4.2.1",
+		"eslint-plugin-sort-imports-es6-autofix": "^0.5.0",
+		"eslint-plugin-standard": "^4.0.1",
+		"prettier": "^1.19.1"
+	},
+	"dependencies": {
+		"express": "^4.17.1",
+		"sipgateio": "^1.8.0",
+		"socket.io": "^2.3.0"
+	},
+	"scripts": {
+		"start": "node src/server.js"
+	}
+}

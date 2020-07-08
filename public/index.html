@@ -1,0 +1,23 @@
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="/style.css" />
+
+		<!-- Load the Chart.js code from a CDN -->
+		<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+		<script src="/socket.io/socket.io.js"></script>
+
+		<title>Call Statistics Demo</title>
+	</head>
+	<body>
+		<header>
+			<h1>Call Statistics Demo</h1>
+		</header>
+
+		<section class="statistics">
+			<!-- This is where Chart.js will render the graph-->
+			<canvas id="chart"></canvas>
+		</section>
+
+		<script src="/script.js"></script>
+	</body>
+</html>
