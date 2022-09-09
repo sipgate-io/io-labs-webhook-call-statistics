@@ -19,6 +19,7 @@
 		"prettier": "^1.19.1"
 	},
 	"dependencies": {
+		"dotenv": "^16.0.2",
 		"express": "^4.17.1",
 		"sipgateio": "^1.8.0",
 		"socket.io": "^2.3.0"

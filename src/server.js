@@ -4,9 +4,10 @@ const { createWebhookModule } = require('sipgateio');
 const express = require('express');
 const path = require('path');
 
-const webhookServerPort = 8080;
-const webhookServerAddress =
-	process.env.SIPGATE_WEBHOOK_SERVER_ADDRESS || 'YOUR_WEBHOOK_SERVER_ADDRESS';
+require("dotenv").config();
+
+const webhookServerPort = process.env.WEBHOOK_PORT;
+const webhookServerAddress = process.env.WEBHOOK_ADDRESS;
 
 const counters = {
 	totalAnswered: 0,
@@ -67,7 +68,7 @@ app.get('/', (_, res) => {
 	res.sendFile(path.resolve(__dirname, '../public/index.html'));
 });
 
-const server = app.listen(3000);
+const server = app.listen(process.env.WEB_INTERFACE_PORT);
 
 const websocketServer = socketIo(server, {
 	serveClient: true,

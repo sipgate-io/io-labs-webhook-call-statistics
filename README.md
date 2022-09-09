@@ -97,6 +97,9 @@ Navigate to the project's root directory and run:
 npm install
 ```
 
+## Configuration
+
+Create the `.env` by copying the [`.env.example`](.env.example) and set the values according to the comment above each variable. For more information read [Configure webhooks for sipgate.io](#configure-webhooks-for-sipgateio) and [Making your computer accessible from the internet](#making-your-computer-accessible-from-the-internet).
 
 ## Execution
 Run the application:
